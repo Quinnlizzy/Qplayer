@@ -135,5 +135,21 @@ span, small {
 }
 
 .volume-icon span{
-    
+    font-size: 2em;
+    padding-top: 0.2em;
 }
+
+.btn {
+    background: linear-gradient(
+        -60deg,
+        #1e1f23,
+        #2e3137);
+    border: none;
+    box-shadow: 0.3em 0.3em 0.8em #151618, -0.3em -0.3em 0.5em #33353b;
+    width: 4em;
+    height: 4em;
+    border: 0.2em #1c2023 solid;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
