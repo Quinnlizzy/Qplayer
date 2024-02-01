@@ -73,7 +73,16 @@ span, small {
     position: absolute;
     width: 1.7em;
     height: 1.7em;
-    background: #fff;
+    background: #111;
     border-radius: 50%;
-    box-shadow: 0 0 0.4em #000;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.timeline-slider .slider-thumb::before {
+    position: absolute;
+    width: 1.7em;
 }
