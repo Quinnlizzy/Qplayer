@@ -94,3 +94,25 @@ span, small {
     border-radius: inherit;
     transition: 0.3s;
 }
+
+.timeline-slider
+.range-slider:hover
+.slider-thumb:before {
+    background: #e75709;
+}
+
+.progress {
+    width:50%;
+    height: 0.4em;
+    border-radius: 3px
+        background: linear-gradient(
+            90deg,
+            #c72611,
+            #e75709
+            );
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        pointer-events: none;
+}
