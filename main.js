@@ -33,3 +33,53 @@ const tracks = [
     "Interlusion",
     "Neon Stairwell"
 ];
+
+//artist name
+
+const artists = [
+    "Pilch"
+];
+
+//covers
+
+const covers = [
+    "cover1",
+    "cover2",
+    "cover3",
+    "cover4",
+    "cover5",
+    "cover6"
+];
+
+//add a click event on the play button
+playBtn.addEventListener('click', playTrack);
+
+//plat track func
+
+function playTrack() {
+    //if the track is playing
+    if (trackPlaying === false) {
+        //play audio
+        audio.play();
+        //add pause icon in button
+        playBtn.innerHTML = `
+        <span class="material-symbol-outlined">
+            pause
+        </span>
+        `;
+        //set the track playing to true becuase track now playing
+        trackPlaying = true;
+        //otherwise if it is playing
+    } else {
+        //pause the track
+        audio.pause();
+        //change the icon to pause
+        playBtn.innerHTML = `
+        <span class="material-symbol-outlined">
+            play_arrow
+        </span>
+        `;
+        //set the track playing to false becuase track now paused again
+        trackPlaying = false;
+    }
+}
