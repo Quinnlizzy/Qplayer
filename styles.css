@@ -64,7 +64,8 @@ span, small {
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     width: 1.7em;
-    height: 1.2em;
+    height: 1.7em;
+    z-index: 3;
     border-radius: 50%;
     background: #fff;
     box-shadow: 0 0 1px #000;
