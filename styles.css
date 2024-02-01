@@ -29,6 +29,9 @@ h1 {
 }
 
 span, small {
-    display: block;
     color: #8c8f90;
+}
+
+.timeline-slider {
+    margin: 2em auto;
 }
