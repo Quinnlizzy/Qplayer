@@ -153,3 +153,39 @@ span, small {
     cursor: pointer;
 }
 
+.btn:hover {
+    background: linear-gradient(
+        60deg,
+        #1e1f23,
+        #2e3137);
+}
+
+.btn-main {
+    background: linear-gradient(
+        -60deg,
+        #c72611,
+        #e75709);
+    width:4.5em;
+    height: 4.5em;
+}
+
+.btn-main:hover {
+    background: linear-gradient(
+        60deg,
+        #c72611,
+        #e75709);
+}
+
+.btn-main span {
+    color: #fff;
+}
+
+.controls .btn {
+    margin: 1em;
+}
+
+@media screen and (max-width: 700px) {
+    .range-slider {
+        width: 100%;
+    }
+}
