@@ -104,15 +104,15 @@ span, small {
 .progress {
     width:50%;
     height: 0.4em;
-    border-radius: 3px
-        background: linear-gradient(
-            90deg,
-            #c72611,
-            #e75709
-            );
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        left: 0;
-        pointer-events: none;
+    border-radius: 3px;
+    background: linear-gradient(
+        90deg,
+        #c72611,
+        #e75709
+    );
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    pointer-events: none;
 }
