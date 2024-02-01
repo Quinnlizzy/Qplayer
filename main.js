@@ -13,3 +13,23 @@ const fullTime = document.querySelector('.fulltime');
 const volumeSlider = document.querySelector('.volume-slider .slider');
 const volumeProgress = document.querySelector('.volume-slider .progress');
 const volumeIcon = document.querySelector('.volume-icon');
+
+//global variables
+
+//is the track playing
+let trackPlaying = false;
+
+//is the track muted
+let volumeMuted = false;
+
+//which track is currently loadrd based on num id
+let trackId = 0;
+
+const tracks = [
+    "Jerry Finn",
+    "Great Barr by Gaslight",
+    "Scotty",
+    "Arcades",
+    "Interlusion",
+    "Neon Stairwell"
+];
