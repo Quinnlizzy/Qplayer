@@ -124,3 +124,16 @@ span, small {
     justify-content: center;
     align-items: center;
 }
+
+.volume-slider .slider::-webkit-slider-thumb {
+    width: 0;
+}
+
+.volume-icon {
+    margin: 0 0.5em;
+    cursor: pointer;
+}
+
+.volume-icon span{
+    
+}
