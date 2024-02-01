@@ -116,3 +116,11 @@ span, small {
     left: 0;
     pointer-events: none;
 }
+
+.volume-slider {
+    max-width: 16em;
+    margin: 1em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
