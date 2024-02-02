@@ -7,14 +7,19 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Player container -->
   <div class="player">
     <img 
       src="../assets/covers/pilch-jerryfinn.jpg" 
       class="cover"
       alt="cover">
   </div>
+
+  <!-- Track information -->
   <h1 class="track-title">Jerry Finn</h1>
   <span class="artist-name">Pilch</span>
+
+  <!-- Timeline and range slider -->
   <div class="timeline-sider">
     <div class="timeline">
       <small class="time">0.00</small>
@@ -32,9 +37,13 @@
       <div class="progress"></div>
     </div>
   </div>
+
+  <!-- Volume slider -->
   <div class="volume-slider">
     <div class="volume-icon">
-      <span class="material-symbols-outlined">volume_down</span>
+      <span class="material-symbols-outlined">
+        volume_down
+      </span>
     </div>
     <div class="range-slider">
       <input 
@@ -47,6 +56,8 @@
       <div class="progress"></div>
     </div>
   </div>
+
+  <!-- Playback controls -->
   <div class="controls">
     <button class="btn" id="btnPrev" type="button">
       <span class="material-symbols-outlined">
@@ -64,11 +75,9 @@
       </span>
     </button>
   </div>
-
-  <audio id="audio" hidden>
-    <source src="../assets/tracks/Jerry Finn.m4a">
-  </audio>
-
-  <script src="script.js"></script>
+  <!-- Audio element for playback -->
+  <audio id="audio" hidden></audio>
+  <!-- JavaScript file -->
+  <script src="main.js"></script>
 </body>
 </html>

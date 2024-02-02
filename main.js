@@ -22,21 +22,26 @@ let trackPlaying = false;
 //is the track muted
 let volumeMuted = false;
 
-//which track is currently loadrd based on num id
+//which track is currently loaded based on num id
 let trackId = 0;
 
 const tracks = [
-    "Jerry Finn",
-    "Great Barr by Gaslight",
+    "Jerry_Finn",
+    "Great_Park_by_Gaslight",
     "Scotty",
     "Arcades",
     "Interlusion",
-    "Neon Stairwell"
+    "Neon_Stairwell"
 ];
 
 //artist name
 
 const artists = [
+    "Pilch",
+    "Pilch",
+    "Pilch",
+    "Pilch",
+    "Pilch",
     "Pilch"
 ];
 
@@ -54,9 +59,10 @@ const covers = [
 //add a click event on the play button
 playBtn.addEventListener('click', playTrack);
 
-//plat track func
+//play track func
 
 function playTrack() {
+    audio.src = `../assets/tracks/${tracks[trackId]}.m4a`;
     //if the track is playing
     if (trackPlaying === false) {
         //play audio
@@ -82,4 +88,24 @@ function playTrack() {
         //set the track playing to false becuase track now paused again
         trackPlaying = false;
     }
+}
+
+function switchTrack() {
+    if(trackPlaying === true) {
+        //leep audio playing
+        audio.play();
+    }
+}
+
+//get the track src
+const trackSrc = 'assets/tracks/' + tracks[trackId] + '.m4a';
+
+function loadTrack() {
+    audio.src = 'assets/tracks/' + tracks[trackId] + '.m4a';
+    audio.load();
+    trackTitle.innerHTML = tracks[trackId];
+    artistName.innerHTML = artists[trackId];
+    cover.src = `assets/covers/${covers[trackId]}.jpg`;
+   
+    audio.play();
 }
