@@ -45,7 +45,7 @@ const artists = [
     "Pilch"
 ];
 
-//covers
+//track covers
 
 const covers = [
     "Jerry_Finn",
