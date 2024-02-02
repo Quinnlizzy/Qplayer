@@ -48,12 +48,12 @@ const artists = [
 //covers
 
 const covers = [
-    "cover1",
-    "cover2",
-    "cover3",
-    "cover4",
-    "cover5",
-    "cover6"
+    "Jerry_Finn",
+    "Great_Park_by_Gaslight",
+    "Scotty",
+    "Arcades",
+    "Interlusion",
+    "Neon_Stairwell"
 ];
 
 //add a click event on the play button
@@ -106,6 +106,35 @@ function loadTrack() {
     trackTitle.innerHTML = tracks[trackId];
     artistName.innerHTML = artists[trackId];
     cover.src = `assets/covers/${covers[trackId]}.jpg`;
-   
-    audio.play();
+    progress.computedStyleMap.width = 0;
+    thumb.computedStyleMap.left = 0;
+
+    audio.addEventListener('loadeddata', () => {
+        setTimeout(fullTime, audio.duration);
+        slider.setAttribute("max", audio.duration);
+});
 }
+
+loadTrack();
+
+btnPrev.addEventListener('click', () => {
+    trackId--;
+    if(trackId < 0) {
+        trackId = tracks.length - 1;
+    }
+    loadTrack();
+    switchTrack();
+});
+
+btnNext.addEventListener('click', nextTrack);
+
+function nextTrack() {
+    trackId++;
+    if(trackId > tracks.length -1) {
+        trackId = 0;
+    }
+    loadTrack();
+    switchTrack();
+}
+
+audio.addEventListener('ended', nextTrack);
