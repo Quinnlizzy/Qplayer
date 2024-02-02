@@ -1,48 +1,57 @@
-<div class="player">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Qplayer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player">
     <img 
-      src="assets/images/players/1.jpg" 
+      src="../assets/covers/pilch-jerryfinn.jpg" 
       class="cover"
       alt="cover">
-</div>
-<h1 class="track-title">Jerry Finn</h1>
-<span class="artist-name">Pilch</span>
-<div class="timeline-sider">
+  </div>
+  <h1 class="track-title">Jerry Finn</h1>
+  <span class="artist-name">Pilch</span>
+  <div class="timeline-sider">
     <div class="timeline">
-        <small class="time">0.00</small>
-        <small class="fulltime">3.45</small>
+      <small class="time">0.00</small>
+      <small class="fulltime">3.45</small>
     </div>
     <div class="range-slider">
-        <input 
-           type="range"
-           min="0" 
-           max="100" 
-           value="0" 
-           class="slider"
-           >
-    <div class="slider-thumb"></div>
-    <div class="progress"></div>
+      <input 
+        type="range"
+        min="0" 
+        max="100" 
+        value="0" 
+        class="slider"
+      >
+      <div class="slider-thumb"></div>
+      <div class="progress"></div>
     </div>
-</div>
-<div class="volume-slider">
-  <div class="volume-icon">
-    <span class="material-symbols-outlined">volume_down</span>
-</div>
-     <div class="range-slider">
-        <input 
-          type="range"
-          min="0" 
-          max="100" 
-          value="50" 
-          class="slider"
-          >
-<div class="progress"></div>
-</div>
-</div>
-<div class="controls">
-  <button class="btn" id="btnPrev" type="button">
-    <span class="material-symbols-outlined">
-      fast_rewind
-    </span>
+  </div>
+  <div class="volume-slider">
+    <div class="volume-icon">
+      <span class="material-symbols-outlined">volume_down</span>
+    </div>
+    <div class="range-slider">
+      <input 
+        type="range"
+        min="0" 
+        max="100" 
+        value="50" 
+        class="slider"
+      >
+      <div class="progress"></div>
+    </div>
+  </div>
+  <div class="controls">
+    <button class="btn" id="btnPrev" type="button">
+      <span class="material-symbols-outlined">
+        fast_rewind
+      </span>
     </button>
     <button class="btn btn-main" id="mainPlayBtn" type="button">
       <span class="material-symbols-outlined">
@@ -54,9 +63,12 @@
         fast_forward
       </span>
     </button>
-</div>
-</div>
+  </div>
 
-<audio id="audio" hidden>
-  <source src="JERRYFINNPATH.mp3" />
-</audio>
+  <audio id="audio" hidden>
+    <source src="../assets/tracks/Jerry Finn.m4a">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
