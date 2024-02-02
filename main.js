@@ -59,7 +59,7 @@ const covers = [
 //add a click event on the play button
 playBtn.addEventListener('click', playTrack);
 
-//play track functio
+//play track function
 
 function playTrack() {
     audio.src = `../assets/tracks/${tracks[trackId]}.m4a`;
