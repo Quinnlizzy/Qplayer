@@ -138,3 +138,23 @@ function nextTrack() {
 }
 
 audio.addEventListener('ended', nextTrack);
+
+function setTime(output, input) {
+    const minutes = Math.floor(input / 60);
+    let seconds = Math.floor(input % 60);
+    if(seconds < 10) {
+        output.innerHTML = minutes + ":0" + seconds;
+    } else {
+    output.innerHTML = minutes +":" + seconds;
+}
+}
+
+setTime(fullTime, audio.duration);
+
+audio.addEventListener('timeupdate', () => {
+    setTime(time, audio.currentTime);
+    let progressWidth = audio.currentTime / audio.duration * 100;
+    progress.style.width = progressWidth + '%';
+    thumb.style.left = progressWidth + '%';
+    slider.value = audio.currentTime;
+}
