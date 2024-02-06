@@ -5,8 +5,8 @@ body {
 
 * {
     box-sizing: border-box;
-    margin: 4;
-    padding: 4;
+    margin: 1;
+    padding: 1;
 }
 
 .player {
