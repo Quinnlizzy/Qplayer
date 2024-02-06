@@ -26,7 +26,7 @@ let volumeMuted = false;
 let trackId = 0;
 
 const tracks = [
-    "Jerry_Finn",
+    "Jerry Finn",
     "Great_Park_by_Gaslight",
     "Scotty",
     "Arcades",
@@ -48,7 +48,7 @@ const artists = [
 //track covers
 
 const covers = [
-    "Jerry_Finn",
+    "Jerry Finn",
     "Great_Park_by_Gaslight",
     "Scotty",
     "Arcades",
