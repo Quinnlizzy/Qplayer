@@ -53,7 +53,7 @@ const covers = [
     "Scotty",
     "Arcades",
     "Interlusion",
-    "Neon_Stairwell"
+    "Neon Stairwell"
 ];
 
 //add a click event on the play button
