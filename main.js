@@ -49,7 +49,7 @@ const artists = [
 
 const covers = [
     "Jerry Finn",
-    "Great_Park_by_Gaslight",
+    "Great Park by Gaslight",
     "Scotty",
     "Arcades",
     "Interlusion",
