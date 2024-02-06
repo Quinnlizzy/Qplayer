@@ -31,7 +31,7 @@ const tracks = [
     "Scotty",
     "Arcades",
     "Interlusion",
-    "Neon_Stairwell"
+    "Neon Stairwell"
 ];
 
 //artist name
