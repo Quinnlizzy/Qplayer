@@ -169,3 +169,35 @@ function customerSlider() {
 customerSlider();
 
 slider.addEventListener('input', customerSlider);
+
+let val;
+
+function customVolumeSlider() {
+    const maxVal = volumeSlider.getAttribute("max");
+    val = (volumeSlider.value / maxVal) * 100 + "%";
+    volumeProgress.style.width = val;
+    audio.volume = volumeSlider.value / 100;
+    if(audio.volume > 0.5) {
+        volumeIcon.innerHTML = `
+        <span class="material-symbols-outlined">
+            volume_up
+        </span>
+        `;
+    } else if(audio.volume === 0) {
+        volumeIcon.innerHTML = `
+        <span class="material-symbols-outlined">
+            volume_off
+        </span>
+        `;
+    } else {
+        volumeIcon.innerHTML = `
+        <span class="material-symbols-outlined">
+            volume_down
+        </span>
+        `;
+    }
+}
+
+customerVolumeSlider();
+
+volumeSlider.addEventListener('input', customVolumeSlider);
