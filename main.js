@@ -201,3 +201,26 @@ function customVolumeSlider() {
 customerVolumeSlider();
 
 volumeSlider.addEventListener('input', customVolumeSlider);
+
+volumeIcon.addEventListener('click', () => {
+    if(volumeMuted === false) {
+        volumeIcon.innerHTML = `
+        <span class="material-symbols-outlined">
+        volume_off
+    </span>
+    `;
+        audio.volume = 0;
+        volumeProgress.style.width = 0;
+        volumeMuted = true;
+    } else {
+        volumeIcon.innerHTML = `
+        <span class="material-symbols-outlined">
+        volume_down
+    </span>
+    `;
+    audio.volume = 0.5;
+    volumeProgress.style.width = val;
+    volumeMuted = false;
+    }
+}
+);
