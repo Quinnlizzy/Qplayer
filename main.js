@@ -141,7 +141,7 @@ audio.addEventListener('ended', nextTrack);
 
 function setTime(output, input) {
     const minutes = Math.floor(input / 60);
-    let seconds = Math.floor(input % 60);
+    const seconds = Math.floor(input % 60);
     if(seconds < 10) {
         output.innerHTML = minutes + ":0" + seconds;
     } else {
@@ -152,9 +152,14 @@ function setTime(output, input) {
 setTime(fullTime, audio.duration);
 
 audio.addEventListener('timeupdate', () => {
-    setTime(time, audio.currentTime);
-    let progressWidth = audio.currentTime / audio.duration * 100;
-    progress.style.width = progressWidth + '%';
-    thumb.style.left = progressWidth + '%';
-    slider.value = audio.currentTime;
+    const currentAudioTime = Math.floor(audio.currentTime);
+    const timePercentage = (currentAudioTime / audio . duration) * 100 + "%";
+    setTime(time, currentAudioTime);
+    progress.style.width = timePercentage;
+    thumb.style.left = timePercentage;
+});
+  
+function customerSlider() {
+    const val = (sliderValue = slider.value;
+    audio.currentTime = sliderValue;
 }
