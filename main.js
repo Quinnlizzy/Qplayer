@@ -112,6 +112,7 @@ function loadTrack() {
     audio.addEventListener('loadeddata', () => {
         setTimeout(fullTime, audio.duration);
         slider.setAttribute("max", audio.duration);
+        setTime(fullTime, audio.duration);
 });
 }
 
@@ -149,7 +150,7 @@ function setTime(output, input) {
 }
 }
 
-setTime(fullTime, audio.duration);
+
 
 audio.addEventListener('timeupdate', () => {
     const currentAudioTime = Math.floor(audio.currentTime);
