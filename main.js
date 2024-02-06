@@ -27,7 +27,7 @@ let trackId = 0;
 
 const tracks = [
     "Jerry Finn",
-    "Great_Park_by_Gaslight",
+    "Great Park by Gaslight",
     "Scotty",
     "Arcades",
     "Interlusion",
