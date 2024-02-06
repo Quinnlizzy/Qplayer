@@ -158,8 +158,14 @@ audio.addEventListener('timeupdate', () => {
     progress.style.width = timePercentage;
     thumb.style.left = timePercentage;
 });
-  
+
 function customerSlider() {
-    const val = (sliderValue = slider.value;
-    audio.currentTime = sliderValue;
+    const val = (slider.value / audio.duration) * 100 + "%";
+    progress.style.width = val;
+    thumb.style.left = val;
+    audio.currentTime = slider.value;
 }
+
+customerSlider();
+
+slider.addEventListener('input', customerSlider);
