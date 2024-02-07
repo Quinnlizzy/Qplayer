@@ -149,10 +149,11 @@ span, small {
         #1e1f23,
         #2e3137);
     border: none;
-    box-shadow: 0.3em 0.3em 0.8em #151618, -0.3em -0.3em 0.5em #33353b;
+    box-shadow: 0.1em 0.2em 0.3em #fe73c6, -0.1em -0.2em 1.9em #fe73c6;
     width: 4em;
     height: 4em;
     border: 0.2em #fcbae2 solid;
+    outline: 0.02em #fe73c6 solid;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -188,6 +189,13 @@ span, small {
 
 .controls .btn {
     margin: 1em;
+    justify-content: space-between;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 @media screen and (max-width: 700px) {
