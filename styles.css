@@ -5,7 +5,7 @@ body {
 
 * {
     box-sizing: border-box;
-    margin: 2;
+    margin: 0;
     padding: 0;
     align-items: center;
     justify-content: center;
@@ -35,17 +35,16 @@ h1 {
 }
 
 span, artist-name {
-    margin: 1em 0 0.3em 0;
+    margin: 0em 0 0em 0;
     display: block;
     text-align: center;
     margin-right: 70%;
     color: #8c8f90;
-
 }
 
 span, small {
     color: #8c8f90;
-
+    text-align: center;
 }
 
 .timeline-slider {
@@ -60,7 +59,7 @@ span, small {
 }
 
 .range-slider {
-    margin-top: 0.4em;
+    margin-top: 0.2em;
     position: relative;
     display: flex;
     user-select: none;
@@ -107,7 +106,7 @@ span, small {
     transform: translate(-50%, -50%);
     width: 0.7em;
     height: 0.7em;
-    background: #333;
+    background: #21e0d0;
     border-radius: inherit;
     transition: 0.3s;
 }
@@ -115,7 +114,7 @@ span, small {
 .timeline-slider
 .range-slider:hover
 .slider-thumb:before {
-    background: #3af7e7;
+    background: #a6f7f0;
 }
 
 .progress {
@@ -136,7 +135,7 @@ span, small {
 
 .volume-slider {
     max-width: 16em;
-    margin: 1em auto;
+    margin: 0em auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,7 +183,7 @@ span, small {
         -60deg,
         #fb3bc8,
         #ff6dd8);
-    width:4.5em;
+    width: 4.5em;
     height: 4.5em;
 }
 
@@ -201,8 +200,11 @@ span, small {
 }
 
 .controls .btn {
+    display: flex;
     margin: 1em;
     justify-content: space-between;
+    align-items: center;
+    justify-content: center;
 }
 
 .controls {
