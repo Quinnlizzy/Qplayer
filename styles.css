@@ -24,14 +24,13 @@ body {
     border: 0.4em #fdd4fb solid;
     outline: 0.1em #fcbae2 solid;
     border-radius: 15%;
-    box-shadow: 0.8em 0.8em 18em #fc68d4, -0.8em -0.8em 18em #fc68d4;
+    box-shadow: 0.8em 0.8em 180em #fc68d4, -0.8em -0.8em 100em #fc68d4;
 }
 
 h1 {
     margin: 1em 0 0.3em 0;
-    color: rgb(252, 249, 234);
+    color: rgb(248, 232, 241);
     text-align: center;
-    margin-right: 37%;
 }
 
 span, artist-name {
