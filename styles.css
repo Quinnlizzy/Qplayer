@@ -20,7 +20,7 @@ body {
 .cover {
     width: 18em;
     border: 0.4em #fcbaf9 solid;
-    
+    outline: 0.8em #ff00ff solid;
     border-radius: 15%;
     box-shadow: 0.8em 0.8em 18em #f050ff, -0.8em -0.8em 18em #f050ff;
 }
