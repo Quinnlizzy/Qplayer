@@ -7,6 +7,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    align-items: center;
 }
 
 .player {
@@ -160,14 +161,15 @@ span, small {
     background: linear-gradient(
         60deg,
         #1e1f23,
-        #2e3137);
+        #2e3137
+    );
 }
 
 .btn-main {
     background: linear-gradient(
         -60deg,
-        #fc68d4,
-        #f956ce);
+        #fb3bc8,
+        #ff6dd8);
     width:4.5em;
     height: 4.5em;
 }
@@ -175,8 +177,9 @@ span, small {
 .btn-main:hover {
     background: linear-gradient(
         60deg,
-        #f956ce,
-        #fc68d4);
+        #ff6dd8,
+        #fb3bc8
+    );
 }
 
 .btn-main span {
@@ -189,6 +192,6 @@ span, small {
 
 @media screen and (max-width: 700px) {
     .range-slider {
-        width: 100%;
+        width: 95%;
     }
 }
