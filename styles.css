@@ -151,7 +151,7 @@ span, small {
     box-shadow: 0.3em 0.3em 0.8em #151618, -0.3em -0.3em 0.5em #33353b;
     width: 4em;
     height: 4em;
-    border: 0.2em #1c2023 solid;
+    border: 0.2em #fcbae2 solid;
     border-radius: 50%;
     cursor: pointer;
 }
@@ -166,8 +166,8 @@ span, small {
 .btn-main {
     background: linear-gradient(
         -60deg,
-        #c72611,
-        #e75709);
+        #fc68d4,
+        #f956ce);
     width:4.5em;
     height: 4.5em;
 }
@@ -175,8 +175,8 @@ span, small {
 .btn-main:hover {
     background: linear-gradient(
         60deg,
-        #c72611,
-        #e75709);
+        #f956ce,
+        #fc68d4);
 }
 
 .btn-main span {
