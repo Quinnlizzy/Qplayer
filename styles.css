@@ -54,12 +54,13 @@ span, small {
 
 .slider{
     -webkit-appearance: none;
+    appearance: none;
     width: 100%;
+    outline: none;
     height: 0.4em;
     border-radius: 3px;
     background: #1f1f1f;
     box-shadow: inset 3px 3px 6px #000, 1px 1px 1px #909090;
-    outline: none;
     cursor: pointer;
 }
 
