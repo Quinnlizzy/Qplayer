@@ -19,9 +19,10 @@ body {
 
 .cover {
     width: 18em;
-    border: 0.8em #171a1d solid;
+    border: 0.4em #fcbaf9 solid;
+    
     border-radius: 15%;
-    box-shadow: 0.8em 0.8em 1.8em #151618, -0.8em -0.8em 1em #33353b;
+    box-shadow: 0.8em 0.8em 18em #f050ff, -0.8em -0.8em 18em #f050ff;
 }
 
 h1 {
