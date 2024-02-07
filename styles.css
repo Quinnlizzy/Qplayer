@@ -19,10 +19,10 @@ body {
 
 .cover {
     width: 18em;
-    border: 0.4em #fcbaf9 solid;
-    outline: 0.8em #ff00ff solid;
+    border: 0.4em #fdd4fb solid;
+    outline: 0.1em #fcbae2 solid;
     border-radius: 15%;
-    box-shadow: 0.8em 0.8em 18em #f050ff, -0.8em -0.8em 18em #f050ff;
+    box-shadow: 0.8em 0.8em 18em #fc68d4, -0.8em -0.8em 18em #fc68d4;
 }
 
 h1 {
