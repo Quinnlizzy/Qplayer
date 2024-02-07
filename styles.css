@@ -24,7 +24,7 @@ body {
     border: 0.4em #fdd4fb solid;
     outline: 0.1em #fcbae2 solid;
     border-radius: 15%;
-    box-shadow: 0.8em 0.8em 180em #fc68d4, -0.8em -0.8em 100em #fc68d4;
+    box-shadow: 0.8em 0.8em 10em #fc68d4, -0.8em -0.8em 10em #fc68d4;
 }
 
 h1 {
@@ -43,7 +43,7 @@ span, small {
 }
 
 .timeline-slider {
-    margin: 2em auto;
+    margin: 1em auto;
     max-width: 18em;
 }
 
@@ -129,11 +129,13 @@ span, small {
 }
 
 .volume-slider {
-    max-width: 16em;
-    margin: 0em auto;
+    max-width: 14em;
+    margin-right: 40%;
+    margin: 1em auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center ;
 }
 
 .volume-slider .slider::-webkit-slider-thumb {
