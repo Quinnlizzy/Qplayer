@@ -101,7 +101,7 @@ span, small {
 .timeline-slider
 .range-slider:hover
 .slider-thumb:before {
-    background: #e75709;
+    background: #3af7e7;
 }
 
 .progress {
@@ -110,8 +110,8 @@ span, small {
     border-radius: 3px;
     background: linear-gradient(
         90deg,
-        #c72611,
-        #e75709
+        #18a3da,
+        #3af7e7
     );
     position: absolute;
     top: 50%;
