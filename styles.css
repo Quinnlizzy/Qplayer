@@ -134,12 +134,19 @@ i {
 
 .volume-slider {
     max-width: 14em;
-    margin-right: 55%;
     margin: 1em auto;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center ;
+    margin-right: 43.5%;
+}
+
+/* This will apply when the screen width is 768px or less (typically tablet and mobile screens) */
+@media (max-width: 768px) {
+    .volume-slider {
+        margin-right: 27%; /* Adjust this value as needed for mobile screens */
+    }
 }
 
 .volume-slider .slider::-webkit-slider-thumb {
