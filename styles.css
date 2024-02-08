@@ -1,6 +1,7 @@
 body {
-    font-family: Helvetica, sans-serif;
-    background: #26282c;
+        font-size: larger;
+    background: #1b1c1f;
+    font-family:monospace;
 }
 
 * {
@@ -33,8 +34,18 @@ body {
     100% { box-shadow: 0.8em 0.8em 4.625em #fc68d4, -0.8em -0.8em 4.625em #fc68d4; }
   }
   
+  @keyframes glowing-border {
+    0% { border-color: #ffe3fe; }
+    50% { border-color: #ffaedf; }
+    100% { border-color: #ffe3fe; }
+  }
+
   .glowing {
     animation: glowing 3s infinite;
+  }
+
+  .glowing-border {
+    animation: glowing-border 3s infinite;
   }
 
 h1 {
