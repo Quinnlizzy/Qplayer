@@ -38,8 +38,12 @@ span, artist-name {
 }
 
 span, small {
-    color: #8c8f90;
+    color: #62f1fe;
     text-align: center;
+}
+
+i {
+    color: #eafdff;
 }
 
 .timeline-slider {
@@ -130,7 +134,7 @@ span, small {
 
 .volume-slider {
     max-width: 14em;
-    margin-right: 40%;
+    margin-right: 55%;
     margin: 1em auto;
     display: flex;
     justify-content: center;
@@ -215,3 +219,4 @@ span, small {
         width: 95%;
     }
 }
+

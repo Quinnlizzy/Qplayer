@@ -69,10 +69,10 @@ function playTrack() {
         audio.play();
         //add pause icon in button
         playBtn.innerHTML = `
-        <span class="material-symbol-outlined">
-            pause
-        </span>
-        `;
+    <i class="material-icons">
+        pause
+    </i>
+`;
         //set the track playing to true becuase track now playing
         trackPlaying = true;
         //otherwise if it is playing
@@ -81,10 +81,10 @@ function playTrack() {
         audio.pause();
         //change the icon to pause
         playBtn.innerHTML = `
-        <span class="material-symbol-outlined">
-            play_arrow
-        </span>
-        `;
+    <i class="material-icons">
+        play_arrow
+    </i>
+`;
         //set the track playing to false becuase track now paused again
         trackPlaying = false;
     }
@@ -177,7 +177,7 @@ function customVolumeSlider() {
     const maxVal = volumeSlider.getAttribute("max");
     val = (volumeSlider.value / maxVal) * 100 + "%";
     volumeProgress.style.width = val;
-    audio.volume = volumeSlider.value / 100;
+    audio.volume = volumeSlider.value / maxVal; // Change this line
     if(audio.volume > 0.5) {
         volumeIcon.innerHTML = `
         <span class="material-symbols-outlined">
@@ -199,7 +199,7 @@ function customVolumeSlider() {
     }
 }
 
-customerVolumeSlider();
+customVolumeSlider();
 
 volumeSlider.addEventListener('input', customVolumeSlider);
 
