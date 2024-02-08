@@ -35,9 +35,9 @@ body {
   }
   
   @keyframes glowing-border {
-    0% { border-color: #ffe3fe; }
-    50% { border-color: #ffaedf; }
-    100% { border-color: #ffe3fe; }
+    0% { border-color: #ffa1d9; }
+    50% { border-color: #ffeaf8; }
+    100% { border-color: #ffa1d9; }
   }
 
   .glowing {
