@@ -62,30 +62,23 @@ playBtn.addEventListener('click', playTrack);
 //play track function
 
 function playTrack() {
-    audio.src = `../assets/tracks/${tracks[trackId]}.m4a`;
-    //if the track is playing
+    // Removed the line that sets the audio source
     if (trackPlaying === false) {
-        //play audio
         audio.play();
-        //add pause icon in button
         playBtn.innerHTML = `
     <i class="material-icons">
         pause
     </i>
 `;
-        //set the track playing to true becuase track now playing
         trackPlaying = true;
-        //otherwise if it is playing
     } else {
-        //pause the track
         audio.pause();
-        //change the icon to pause
+        cover.classList.remove('glowing');
         playBtn.innerHTML = `
     <i class="material-icons">
         play_arrow
     </i>
 `;
-        //set the track playing to false becuase track now paused again
         trackPlaying = false;
     }
 }
@@ -225,3 +218,12 @@ volumeIcon.addEventListener('click', () => {
     }
 }
 );
+
+// Assuming 'audio' is your audio element and 'cover' is the element you want to glow
+audio.addEventListener('play', function() {
+    cover.classList.add('glowing');
+  });
+
+  audio.addEventListener('pause', function() {
+    cover.classList.remove('glowing');
+  });
