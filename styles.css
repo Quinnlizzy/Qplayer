@@ -28,7 +28,7 @@ body {
     box-shadow: 0.8em 0.8em 10em #fc68d4, -0.8em -0.8em 10em #fc68d4;
 }
 
-@keyframes glowing {
+  @keyframes glowing {
     0% { box-shadow: 0.8em 0.8em 4.625em #fc68d4, -0.8em -0.8em 4.625em #fc68d4; }
     50% { box-shadow: 0.8em 0.8em 10em #fc68d4, -0.8em -0.8em 10em #fc68d4; }
     100% { box-shadow: 0.8em 0.8em 4.625em #fc68d4, -0.8em -0.8em 4.625em #fc68d4; }
@@ -41,11 +41,7 @@ body {
   }
 
   .glowing {
-    animation: glowing 3s infinite;
-  }
-
-  .glowing-border {
-    animation: glowing-border 3s infinite;
+    animation: glowing-border 3s infinite, glowing 3s infinite;
   }
 
 h1 {
