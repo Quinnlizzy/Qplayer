@@ -4,3 +4,4 @@ sorry not sorry
 all seriosness - good to build with just html, css and JavaScript again
 cheers
 .....
+ready for vercel
