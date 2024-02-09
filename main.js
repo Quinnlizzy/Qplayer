@@ -29,6 +29,7 @@ const tracks = [
     "Jerry Finn",
     "Great Park by Gaslight",
     "Scotty",
+    "Wreck",
     "Arcades",
     "Interlusion",
     "Neon Stairwell"
@@ -37,6 +38,7 @@ const tracks = [
 //artist name
 
 const artists = [
+    "Pilch",
     "Pilch",
     "Pilch",
     "Pilch",
@@ -51,6 +53,7 @@ const covers = [
     "Jerry Finn",
     "Great Park by Gaslight",
     "Scotty",
+    "Wreck",
     "Arcades",
     "Interlusion",
     "Neon Stairwell"
